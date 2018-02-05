@@ -1,0 +1,17 @@
+.row-centered {
+    text-align:center;
+}
+
+.item {
+    width:100%;
+    height:100%;
+    padding:16px 8px;
+    display:table;
+}
+
+.content {
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+

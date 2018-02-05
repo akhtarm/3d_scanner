@@ -1,0 +1,50 @@
+.row-centered {
+    text-align:center;
+}
+
+.item {
+    width:100%;
+    height:100%;
+    padding:16px 8px;
+    display:table;
+}
+
+.content {
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.scrollable-table {
+    height: 100px !important;
+    overflow: scroll;
+}
+
+table {
+            width: 100%;
+        }
+
+        thead, tbody, tr, td, th { display: block; }
+
+        tr:after {
+            content: ' ';
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+        thead th {
+            height: 30px;
+            text-align: left;
+        }
+
+        tbody {
+            height: 120px;
+            overflow-y: auto;
+        }
+
+
+        tbody td, thead th {
+            width: 14%;
+            float: left;
+        }

@@ -1,0 +1,55 @@
+<div class="panel panel-info">
+  <!-- Default panel contents -->
+    <div class="panel-heading">
+        <div class="container-fluid"><div class="row row-centered"></div>Camera {{cameraModel.id}} Selected</div>
+    </div>
+   <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <div class="panel-body">
+       
+    <div class="container-fluid">
+        <div class="row row-centered">
+                <div class="col-md-4"><div class="item"><h3>Camera Settings</h3></div></div>
+                <div class="col-md-8"><div class="item"><h3>LED Settings</h3></div></div>
+        </div>
+        <div class="row row-centered">
+            <div class="col-md-2"><div class="item"><div class="content"><label for="exposure">Exposure</label></div></div></div>
+            <div class="col-md-1"><div class="item"><div class="content"><input type="number" min="0" max="100" size="25" value="{{cameraModel.exposure}}"></div></div></div>
+            <!--<div class="col-md-1"><div class="item"><div class="content"><input type="range" min="0" max="100" ></div></div></div>-->
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><div class="item"><div class="content"><label for="top-right">Top Right</label></div></div></div>
+            <div class="col-md-1"><div class="item"><div class="content"><input type="number" min="0" max="100" size="25" value="{{ledArray[0].frequency}}"  ></div></div></div>
+            <!--<div class="col-md-1"><div class="item"><div class="content"><input type="range" min="0" max="100"></div></div></div>-->
+            <div class="col-md-2"><div class="item"><div class="content"><label for="bottom-right">Bottom Right</label></div></div></div>
+            <div class="col-md-1"><div class="item"><div class="content"><input type="number" min="0" max="100" size="25" value="{{ledArray[1].frequency}}"></div></div></div>
+            <!--<div class="col-md-1"><div class="item"><div class="content"><input type="range" min="0" max="100"></div></div></div>-->
+        </div>
+        <div class="row row-centered">
+            <div class="col-md-2"><div class="item"><div class="content"><label for="iso">ISO</label></div></div></div>
+            <div class="col-md-1"><div class="item"><div class="content"><input type="number" min="0" max="100" size="25" value="{{cameraModel.iso}}"  ></div></div></div>
+            <!--<div class="col-md-1"><div class="item"><div class="content"><input type="range" min="0" max="100"></div></div></div>-->
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><div class="item"><div class="content"><label for="top-left">Top Left</label></div></div></div>
+            <div class="col-md-1"><div class="item"><div class="content"><input type="number" min="0" max="100" size="25" value="{{ledArray[2].frequency}}"></div></div></div>
+            <!--<div class="col-md-1"><div class="item"><div class="content"><input type="range" min="0" max="100"></div></div></div>-->
+            <div class="col-md-2"><div class="item"><div class="content"><label for="bottom-left">Bottom Left</label></div></div></div>
+            <div class="col-md-1"><div class="item"><div class="content"><input type="number" min="0" max="100" size="25" value="{{ledArray[3].frequency}}"></div></div></div>
+            <!--<div class="col-md-1"><div class="item"><div class="content"><input type="range" min="0" max="100"></div></div></div>-->
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row row-centered">
+            <div class="col-md-4">
+                <div class="item"><div class="content"><button type="button" class="btn btn-primary">Set Default Settings</button></div></div>
+            </div>
+            <div class="col-md-4">
+                <div class="item"><div class="content"><button type="button" class="btn btn-primary">Last Saved Settings</button></div></div>
+            </div>
+            <div class="col-md-4">
+                <div class="item"><div class="content"><button type="submit" class="btn btn-primary">Add Instruction to List</button></div></div>
+            </div>
+        </div>  
+    </div>
+  </div>
+    </form>
+</div>
